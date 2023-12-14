@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+@import url(./reset.css);
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+/* ------------------Header style---------------- */
+/* ---------------------------------------------- */
+
+header {
+    height: 80px;
+    line-height: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    display: inline;
+    cursor: pointer;
+}
+
+nav ul li + li {
+    margin-left: 20px;
+} 
+
+.company-name {
+    font-size: 28px;
+    font-weight: 600;
+    color: #FF7342;
+}
+
+.log-in, .sign-up {
+    padding: 10px 30px;
+}
+
+.log-in {
+    padding: 16px 30px;
+    background-color: #1B7FF7;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.log-in:hover {
+    background-color: #006aeb;
+}
+
+/* ------------------Main style------------------ */
+/* ---------------------------------------------- */
+
+.hero {
+    background-color: #fff0ec;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 0px 90px 0px;
+}
+
+.hero-text h1 {
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: -6px;
+    text-align: center;
+    line-height: initial;
+    padding-bottom: 20px;
+    width: 70%;
+}
+
+.drone-word {
+    background-color: #FF7342;
+    color: #fff;
+    padding: 0px 22px 0px 40px;
+    border-radius: 80px;
+    margin-right: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.hero-text button {
+    padding: 16px 30px;
+    background-color: #1B7FF7;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+.hero-text button:hover {
+    background-color: #006aeb;
+}
+
+.why-us {
+    background-color: #fff;
+    padding: 90px 0;
+    height: fit-content;
+}
+ 
+.why-us .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+ 
+.why-us h2 {
+    font-size: 60px;
+    font-weight: 600;
+}
+ 
+.context p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #585858;
+}
+ 
+.context button {
+    padding: 16px 30px;
+    background-color: #1B7FF7;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+}
+ 
+.context button:hover {
+    background-color: #006aeb;
+}
+ 
+.flex-box {
+    display: flex;
+    gap: 20px;
+}
+ 
+.box-1, .box-2, .box-3, .box-4 {
+    background-color: #f6f7fa;
+    padding: 25px;
+    height: 195px;
+}
+ 
+.box-2, .box-4 {
+    margin-top: 20px;
+}
+ 
+.row-1, .row-2 {
+    width: calc(50% - 20px);
+}
+
+.flex-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+ 
+.flex-box p {
+    margin-top: 10px;
+    color: #585858;
+}
+
+.contact-now {
+    padding: 90px 0px;
+    background-color: #fff0ec;
+}
+
+.contact {
+    display: grid;
+    place-items: center;
+}
+
+.contact h3 {
+    text-align: center;
+    font-size: 50px;
+    line-height: 1;
+}
+
+.contact-now button {
+    padding: 16px 30px;
+    background-color: #1B7FF7;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+.contact-now button:hover {
+    background-color: #006aeb;
+}
+
+/* --------------------Map style------------------------ */
+/* ----------------------------------------------------- */
+ 
+.map-box {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+ 
+.map-box .container {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.map {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 500px;
+    background-color: #f6f7fa;
+}
+
+.map-info {
+    position: relative;
+    top: 50%;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+}
+
+.map-info p {
+    font-size: 20px;
+    font-weight: 400;
+}
+ 
+.track-button {
+    padding: 20px 40px;
+    background-color: #1B7FF7;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+}
+ 
+.v-button {
+    display: flex;
+    justify-content: center;
+}
+ 
+.track-button:hover {
+    background-color: #006aeb;
+}
+ 
+.mapboxgl-ctrl-top-left, .mapboxgl-ctrl, .mapboxgl-ctrl-bottom-right {
+    visibility: hidden !important;
+}
+
+/* --------------------Footer style------------------------ */
+/* -------------------------------------------------------- */
+
+footer {
+    background-color: #f3f3f3;
+}
+
+footer p {
+    text-align: center;
+    color: #737373;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+footer a {
+    color: #737373;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #1d1e22;
+}
+
+footer i {
+    font-size: 25px;
+}
+
+.footer-row-1 ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    gap: 30px;
+}
+
+.footer-row-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-row-2 li {
+    display: inline;
+}
+
+.footer-row-2 li + li {
+    margin-left: 40px;
+}
